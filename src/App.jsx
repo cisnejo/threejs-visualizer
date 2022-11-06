@@ -61,7 +61,7 @@ function Box({ rawData, x }) {
   }, [])
   return (
     <mesh ref={ref} castShadow>
-      <boxGeometry attach="geometry" args={[1, rawData / 5, 2]} />
+      <boxGeometry attach="geometry" args={[1, rawData / 5, .01]} />
       <meshStandardMaterial color="white" />
     </mesh>
   );
